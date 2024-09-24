@@ -177,5 +177,7 @@ namespace ProjetoCursos
 
             MessageBox.Show(resultado.Length > 0 ? resultado.ToString() : "Nenhum aluno encontrado.");
         }
+
+        
     }
 }

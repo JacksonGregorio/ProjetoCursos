@@ -48,6 +48,15 @@
             btnPesquisarDisciplina = new Button();
             txtPesquisarAluno = new TextBox();
             btnPesquisarAluno = new Button();
+            lblCursoId = new Label();
+            lblCursoDescricao = new Label();
+            lblDisciplinaId = new Label();
+            lblDisciplinaDescricao = new Label();
+            lblAlunoId = new Label();
+            lblAlunoNome = new Label();
+            lblPesquisarCurso = new Label();
+            lblPesquisarDisciplina = new Label();
+            lblPesquisarAluno = new Label();
             SuspendLayout();
             // 
             // txtCursoId
@@ -170,7 +179,7 @@
             // 
             btnExcluirAluno.Location = new Point(130, 280);
             btnExcluirAluno.Name = "btnExcluirAluno";
-            btnExcluirAluno.Size = new Size(100, 23);
+            btnExcluirAluno.Size = new Size(211, 23);
             btnExcluirAluno.TabIndex = 13;
             btnExcluirAluno.Text = "Excluir Aluno";
             btnExcluirAluno.UseVisualStyleBackColor = true;
@@ -178,11 +187,11 @@
             // 
             // btnDesmatricularAluno
             // 
-            btnDesmatricularAluno.Location = new Point(130, 309);
+            btnDesmatricularAluno.Location = new Point(188, 201);
             btnDesmatricularAluno.Name = "btnDesmatricularAluno";
-            btnDesmatricularAluno.Size = new Size(100, 23);
+            btnDesmatricularAluno.Size = new Size(211, 23);
             btnDesmatricularAluno.TabIndex = 14;
-            btnDesmatricularAluno.Text = "Desmatricular Aluno";
+            btnDesmatricularAluno.Text = "Desmatricular aluno";
             btnDesmatricularAluno.UseVisualStyleBackColor = true;
             btnDesmatricularAluno.Click += btnDesmatricularAluno_Click;
             // 
@@ -190,7 +199,7 @@
             // 
             txtPesquisarCurso.Location = new Point(12, 338);
             txtPesquisarCurso.Name = "txtPesquisarCurso";
-            txtPesquisarCurso.PlaceholderText = "Pesquisar Curso";
+            txtPesquisarCurso.PlaceholderText = "Nome Curso";
             txtPesquisarCurso.Size = new Size(100, 23);
             txtPesquisarCurso.TabIndex = 15;
             // 
@@ -198,15 +207,15 @@
             // 
             btnPesquisarCurso.Location = new Point(130, 338);
             btnPesquisarCurso.Name = "btnPesquisarCurso";
-            btnPesquisarCurso.Size = new Size(100, 23);
+            btnPesquisarCurso.Size = new Size(211, 23);
             btnPesquisarCurso.TabIndex = 16;
-            btnPesquisarCurso.Text = "Nome Curso";
+            btnPesquisarCurso.Text = "Pesquisar Curso";
             btnPesquisarCurso.UseVisualStyleBackColor = true;
             btnPesquisarCurso.Click += btnPesquisarCurso_Click;
             // 
             // txtPesquisarDisciplina
             // 
-            txtPesquisarDisciplina.Location = new Point(12, 367);
+            txtPesquisarDisciplina.Location = new Point(12, 402);
             txtPesquisarDisciplina.Name = "txtPesquisarDisciplina";
             txtPesquisarDisciplina.PlaceholderText = "Nome Disciplina";
             txtPesquisarDisciplina.Size = new Size(100, 23);
@@ -214,17 +223,17 @@
             // 
             // btnPesquisarDisciplina
             // 
-            btnPesquisarDisciplina.Location = new Point(130, 367);
+            btnPesquisarDisciplina.Location = new Point(130, 401);
             btnPesquisarDisciplina.Name = "btnPesquisarDisciplina";
-            btnPesquisarDisciplina.Size = new Size(100, 23);
+            btnPesquisarDisciplina.Size = new Size(211, 23);
             btnPesquisarDisciplina.TabIndex = 18;
-            btnPesquisarDisciplina.Text = "Nome Disciplina";
+            btnPesquisarDisciplina.Text = "Pesquisar Disciplina";
             btnPesquisarDisciplina.UseVisualStyleBackColor = true;
             btnPesquisarDisciplina.Click += btnPesquisarDisciplina_Click;
             // 
             // txtPesquisarAluno
             // 
-            txtPesquisarAluno.Location = new Point(12, 396);
+            txtPesquisarAluno.Location = new Point(12, 446);
             txtPesquisarAluno.Name = "txtPesquisarAluno";
             txtPesquisarAluno.PlaceholderText = "Nome Aluno";
             txtPesquisarAluno.Size = new Size(100, 23);
@@ -232,42 +241,141 @@
             // 
             // btnPesquisarAluno
             // 
-            btnPesquisarAluno.Location = new Point(130, 396);
+            btnPesquisarAluno.Location = new Point(130, 445);
             btnPesquisarAluno.Name = "btnPesquisarAluno";
-            btnPesquisarAluno.Size = new Size(100, 23);
+            btnPesquisarAluno.Size = new Size(211, 23);
             btnPesquisarAluno.TabIndex = 20;
             btnPesquisarAluno.Text = "Pesquisar Aluno";
             btnPesquisarAluno.UseVisualStyleBackColor = true;
             btnPesquisarAluno.Click += btnPesquisarAluno_Click;
             // 
+            // lblCursoId
+            // 
+            lblCursoId.AutoSize = true;
+            lblCursoId.Location = new Point(118, 15);
+            lblCursoId.Name = "lblCursoId";
+            lblCursoId.Size = new Size(52, 15);
+            lblCursoId.TabIndex = 21;
+            lblCursoId.Text = "ID Curso";
+            // 
+            // lblCursoDescricao
+            // 
+            lblCursoDescricao.AutoSize = true;
+            lblCursoDescricao.Location = new Point(118, 41);
+            lblCursoDescricao.Name = "lblCursoDescricao";
+            lblCursoDescricao.Size = new Size(92, 15);
+            lblCursoDescricao.TabIndex = 22;
+            lblCursoDescricao.Text = "Descrição Curso";
+            // 
+            // lblDisciplinaId
+            // 
+            lblDisciplinaId.AutoSize = true;
+            lblDisciplinaId.Location = new Point(118, 96);
+            lblDisciplinaId.Name = "lblDisciplinaId";
+            lblDisciplinaId.Size = new Size(72, 15);
+            lblDisciplinaId.TabIndex = 23;
+            lblDisciplinaId.Text = "ID Disciplina";
+            // 
+            // lblDisciplinaDescricao
+            // 
+            lblDisciplinaDescricao.AutoSize = true;
+            lblDisciplinaDescricao.Location = new Point(118, 122);
+            lblDisciplinaDescricao.Name = "lblDisciplinaDescricao";
+            lblDisciplinaDescricao.Size = new Size(112, 15);
+            lblDisciplinaDescricao.TabIndex = 24;
+            lblDisciplinaDescricao.Text = "Descrição Disciplina";
+            // 
+            // lblAlunoId
+            // 
+            lblAlunoId.AutoSize = true;
+            lblAlunoId.Location = new Point(118, 204);
+            lblAlunoId.Name = "lblAlunoId";
+            lblAlunoId.Size = new Size(53, 15);
+            lblAlunoId.TabIndex = 25;
+            lblAlunoId.Text = "ID Aluno";
+            // 
+            // lblAlunoNome
+            // 
+            lblAlunoNome.AutoSize = true;
+            lblAlunoNome.Location = new Point(118, 230);
+            lblAlunoNome.Name = "lblAlunoNome";
+            lblAlunoNome.Size = new Size(92, 15);
+            lblAlunoNome.TabIndex = 26;
+            lblAlunoNome.Text = "Nome do Aluno";
+            // 
+            // lblPesquisarCurso
+            // 
+            lblPesquisarCurso.AutoSize = true;
+            lblPesquisarCurso.Location = new Point(12, 320);
+            lblPesquisarCurso.Name = "lblPesquisarCurso";
+            lblPesquisarCurso.Size = new Size(91, 15);
+            lblPesquisarCurso.TabIndex = 27;
+            lblPesquisarCurso.Text = "Pesquisar Curso";
+            // 
+            // lblPesquisarDisciplina
+            // 
+            lblPesquisarDisciplina.AutoSize = true;
+            lblPesquisarDisciplina.Location = new Point(11, 375);
+            lblPesquisarDisciplina.Name = "lblPesquisarDisciplina";
+            lblPesquisarDisciplina.Size = new Size(111, 15);
+            lblPesquisarDisciplina.TabIndex = 28;
+            lblPesquisarDisciplina.Text = "Pesquisar Disciplina";
+            // 
+            // lblPesquisarAluno
+            // 
+            lblPesquisarAluno.AutoSize = true;
+            lblPesquisarAluno.Location = new Point(11, 428);
+            lblPesquisarAluno.Name = "lblPesquisarAluno";
+            lblPesquisarAluno.Size = new Size(92, 15);
+            lblPesquisarAluno.TabIndex = 29;
+            lblPesquisarAluno.Text = "Pesquisar Aluno";
+            // 
             // Form1
             // 
-            ClientSize = new Size(471, 517);
+            ClientSize = new Size(582, 605);
+            Controls.Add(lblCursoId);
+            Controls.Add(lblCursoDescricao);
+            Controls.Add(lblDisciplinaId);
+            Controls.Add(lblDisciplinaDescricao);
+            Controls.Add(lblAlunoId);
+            Controls.Add(lblAlunoNome);
+            Controls.Add(lblPesquisarCurso);
+            Controls.Add(lblPesquisarDisciplina);
+            Controls.Add(lblPesquisarAluno);
+            Controls.Add(txtCursoId);
+            Controls.Add(txtCursoDescricao);
+            Controls.Add(btnAdicionarCurso);
+            Controls.Add(txtDisciplinaId);
+            Controls.Add(txtDisciplinaDescricao);
+            Controls.Add(cmbCursos);
+            Controls.Add(btnAdicionarDisciplina);
+            Controls.Add(txtAlunoId);
+            Controls.Add(txtAlunoNome);
+            Controls.Add(cmbDisciplinas);
+            Controls.Add(btnMatricularAluno);
+            Controls.Add(btnExcluirCurso);
+            Controls.Add(btnExcluirDisciplina);
+            Controls.Add(btnExcluirAluno);
+            Controls.Add(btnDesmatricularAluno);
             Controls.Add(txtPesquisarCurso);
             Controls.Add(btnPesquisarCurso);
             Controls.Add(txtPesquisarDisciplina);
             Controls.Add(btnPesquisarDisciplina);
             Controls.Add(txtPesquisarAluno);
             Controls.Add(btnPesquisarAluno);
-            Controls.Add(btnDesmatricularAluno);
-            Controls.Add(btnExcluirAluno);
-            Controls.Add(btnExcluirDisciplina);
-            Controls.Add(btnExcluirCurso);
-            Controls.Add(btnMatricularAluno);
-            Controls.Add(cmbDisciplinas);
-            Controls.Add(txtAlunoNome);
-            Controls.Add(txtAlunoId);
-            Controls.Add(btnAdicionarDisciplina);
-            Controls.Add(cmbCursos);
-            Controls.Add(txtDisciplinaDescricao);
-            Controls.Add(txtDisciplinaId);
-            Controls.Add(btnAdicionarCurso);
-            Controls.Add(txtCursoDescricao);
-            Controls.Add(txtCursoId);
             Name = "Form1";
-            Text = "Gerenciamento de Cursos";
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private Label lblCursoId;
+        private Label lblCursoDescricao;
+        private Label lblDisciplinaId;
+        private Label lblDisciplinaDescricao;
+        private Label lblAlunoId;
+        private Label lblAlunoNome;
+        private Label lblPesquisarCurso;
+        private Label lblPesquisarDisciplina;
+        private Label lblPesquisarAluno;
     }
 }
