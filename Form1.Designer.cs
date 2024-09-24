@@ -200,7 +200,7 @@
             btnPesquisarCurso.Name = "btnPesquisarCurso";
             btnPesquisarCurso.Size = new Size(100, 23);
             btnPesquisarCurso.TabIndex = 16;
-            btnPesquisarCurso.Text = "Pesquisar Curso";
+            btnPesquisarCurso.Text = "Nome Curso";
             btnPesquisarCurso.UseVisualStyleBackColor = true;
             btnPesquisarCurso.Click += btnPesquisarCurso_Click;
             // 
@@ -208,7 +208,7 @@
             // 
             txtPesquisarDisciplina.Location = new Point(12, 367);
             txtPesquisarDisciplina.Name = "txtPesquisarDisciplina";
-            txtPesquisarDisciplina.PlaceholderText = "Pesquisar Disciplina";
+            txtPesquisarDisciplina.PlaceholderText = "Nome Disciplina";
             txtPesquisarDisciplina.Size = new Size(100, 23);
             txtPesquisarDisciplina.TabIndex = 17;
             // 
@@ -218,7 +218,7 @@
             btnPesquisarDisciplina.Name = "btnPesquisarDisciplina";
             btnPesquisarDisciplina.Size = new Size(100, 23);
             btnPesquisarDisciplina.TabIndex = 18;
-            btnPesquisarDisciplina.Text = "Pesquisar Disciplina";
+            btnPesquisarDisciplina.Text = "Nome Disciplina";
             btnPesquisarDisciplina.UseVisualStyleBackColor = true;
             btnPesquisarDisciplina.Click += btnPesquisarDisciplina_Click;
             // 
@@ -226,7 +226,7 @@
             // 
             txtPesquisarAluno.Location = new Point(12, 396);
             txtPesquisarAluno.Name = "txtPesquisarAluno";
-            txtPesquisarAluno.PlaceholderText = "Pesquisar Aluno";
+            txtPesquisarAluno.PlaceholderText = "Nome Aluno";
             txtPesquisarAluno.Size = new Size(100, 23);
             txtPesquisarAluno.TabIndex = 19;
             // 
