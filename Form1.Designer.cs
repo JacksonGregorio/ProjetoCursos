@@ -18,6 +18,12 @@
         private System.Windows.Forms.Button btnExcluirDisciplina;
         private System.Windows.Forms.Button btnExcluirAluno;
         private System.Windows.Forms.Button btnDesmatricularAluno;
+        private System.Windows.Forms.TextBox txtPesquisarCurso;
+        private System.Windows.Forms.Button btnPesquisarCurso;
+        private System.Windows.Forms.TextBox txtPesquisarDisciplina;
+        private System.Windows.Forms.Button btnPesquisarDisciplina;
+        private System.Windows.Forms.TextBox txtPesquisarAluno;
+        private System.Windows.Forms.Button btnPesquisarAluno;
 
         private void InitializeComponent()
         {
@@ -190,10 +196,84 @@
             this.btnDesmatricularAluno.UseVisualStyleBackColor = true;
             this.btnDesmatricularAluno.Click += new System.EventHandler(this.btnDesmatricularAluno_Click);
 
+
+            // 
+            // txtPesquisarCurso
+            // 
+            this.txtPesquisarCurso = new System.Windows.Forms.TextBox();
+            this.txtPesquisarCurso.Location = new System.Drawing.Point(12, 338);
+            this.txtPesquisarCurso.Name = "txtPesquisarCurso";
+            this.txtPesquisarCurso.Size = new System.Drawing.Size(100, 20);
+            this.txtPesquisarCurso.TabIndex = 15;
+            this.txtPesquisarCurso.PlaceholderText = "Pesquisar Curso";
+
+            // 
+            // btnPesquisarCurso
+            // 
+            this.btnPesquisarCurso = new System.Windows.Forms.Button();
+            this.btnPesquisarCurso.Location = new System.Drawing.Point(130, 338);
+            this.btnPesquisarCurso.Name = "btnPesquisarCurso";
+            this.btnPesquisarCurso.Size = new System.Drawing.Size(100, 23);
+            this.btnPesquisarCurso.TabIndex = 16;
+            this.btnPesquisarCurso.Text = "Pesquisar Curso";
+            this.btnPesquisarCurso.UseVisualStyleBackColor = true;
+            this.btnPesquisarCurso.Click += new System.EventHandler(this.btnPesquisarCurso_Click);
+
+            // 
+            // txtPesquisarDisciplina
+            // 
+            this.txtPesquisarDisciplina = new System.Windows.Forms.TextBox();
+            this.txtPesquisarDisciplina.Location = new System.Drawing.Point(12, 367);
+            this.txtPesquisarDisciplina.Name = "txtPesquisarDisciplina";
+            this.txtPesquisarDisciplina.Size = new System.Drawing.Size(100, 20);
+            this.txtPesquisarDisciplina.TabIndex = 17;
+            this.txtPesquisarDisciplina.PlaceholderText = "Pesquisar Disciplina";
+
+            // 
+            // btnPesquisarDisciplina
+            // 
+            this.btnPesquisarDisciplina = new System.Windows.Forms.Button();
+            this.btnPesquisarDisciplina.Location = new System.Drawing.Point(130, 367);
+            this.btnPesquisarDisciplina.Name = "btnPesquisarDisciplina";
+            this.btnPesquisarDisciplina.Size = new System.Drawing.Size(100, 23);
+            this.btnPesquisarDisciplina.TabIndex = 18;
+            this.btnPesquisarDisciplina.Text = "Pesquisar Disciplina";
+            this.btnPesquisarDisciplina.UseVisualStyleBackColor = true;
+            this.btnPesquisarDisciplina.Click += new System.EventHandler(this.btnPesquisarDisciplina_Click);
+
+            // 
+            // txtPesquisarAluno
+            // 
+            this.txtPesquisarAluno = new System.Windows.Forms.TextBox();
+            this.txtPesquisarAluno.Location = new System.Drawing.Point(12, 396);
+            this.txtPesquisarAluno.Name = "txtPesquisarAluno";
+            this.txtPesquisarAluno.Size = new System.Drawing.Size(100, 20);
+            this.txtPesquisarAluno.TabIndex = 19;
+            this.txtPesquisarAluno.PlaceholderText = "Pesquisar Aluno";
+
+            // 
+            // btnPesquisarAluno
+            // 
+            this.btnPesquisarAluno = new System.Windows.Forms.Button();
+            this.btnPesquisarAluno.Location = new System.Drawing.Point(130, 396);
+            this.btnPesquisarAluno.Name = "btnPesquisarAluno";
+            this.btnPesquisarAluno.Size = new System.Drawing.Size(100, 23);
+            this.btnPesquisarAluno.TabIndex = 20;
+            this.btnPesquisarAluno.Text = "Pesquisar Aluno";
+            this.btnPesquisarAluno.UseVisualStyleBackColor = true;
+            this.btnPesquisarAluno.Click += new System.EventHandler(this.btnPesquisarAluno_Click);
+
+
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(284, 341);
+            this.Controls.Add(this.txtPesquisarCurso);
+            this.Controls.Add(this.btnPesquisarCurso);
+            this.Controls.Add(this.txtPesquisarDisciplina);
+            this.Controls.Add(this.btnPesquisarDisciplina);
+            this.Controls.Add(this.txtPesquisarAluno);
+            this.Controls.Add(this.btnPesquisarAluno);
             this.Controls.Add(this.btnDesmatricularAluno);
             this.Controls.Add(this.btnExcluirAluno);
             this.Controls.Add(this.btnExcluirDisciplina);

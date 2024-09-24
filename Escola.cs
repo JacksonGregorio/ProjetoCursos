@@ -20,6 +20,11 @@ namespace ProjetoCursos
             return false;
         }
 
+        public List<Curso> PesquisarCursos(string pesquisa)
+        {
+            return cursos.Where(c => c.Descricao.Contains(pesquisa, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
         public Curso PesquisarCurso(int id)
         {
             return cursos.FirstOrDefault(c => c.Id == id);

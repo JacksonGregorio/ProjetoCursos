@@ -116,5 +116,35 @@ namespace ProjetoCursos
             }
         }
 
+        private void btnPesquisarCurso_Click(object sender, EventArgs e)
+        {
+            string pesquisa = txtPesquisarCurso.Text;
+            var cursos = escola.PesquisarCursos(pesquisa);
+            cmbCursos.Items.Clear();
+            foreach (var curso in cursos)
+            {
+                cmbCursos.Items.Add(curso);
+            }
+        }
+
+        private void btnPesquisarDisciplina_Click(object sender, EventArgs e)
+        {
+            string pesquisa = txtPesquisarDisciplina.Text;
+            Curso cursoSelecionado = (Curso)cmbCursos.SelectedItem;
+            var disciplinas = cursoSelecionado.PesquisarDisciplinas(pesquisa);
+            cmbDisciplinas.Items.Clear();
+            foreach (var disciplina in disciplinas)
+            {
+                cmbDisciplinas.Items.Add(disciplina);
+            }
+        }
+
+        private void btnPesquisarAluno_Click(object sender, EventArgs e)
+        {
+            string pesquisa = txtPesquisarAluno.Text;
+            Disciplina disciplinaSelecionada = (Disciplina)cmbDisciplinas.SelectedItem;
+            var alunos = disciplinaSelecionada.PesquisarAlunos(pesquisa);
+            // Exibir os alunos encontrados (implementar conforme necessário)
+        }
     }
 }

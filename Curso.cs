@@ -8,6 +8,11 @@ public class Curso
     public string Descricao { get; set; }
     private List<Disciplina> disciplinas = new List<Disciplina>();
 
+    public List<Disciplina> PesquisarDisciplinas(string pesquisa)
+    {
+        return disciplinas.Where(d => d.Descricao.Contains(pesquisa, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
+
     public bool AdicionarDisciplina(Disciplina disciplina)
     {
         if (disciplinas.Count < 12)
